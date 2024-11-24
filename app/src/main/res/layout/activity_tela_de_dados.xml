@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título de cabeçalho -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalhes do Chamado"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Cartão de dados do chamado -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Linha para "Ligar para o Suporte" -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="start"
+                        android:src="@drawable/ic_atendente" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="CHAMADO ENCAMINHADO PARA O SUPORTE"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#E0E0E0"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="FUNCIONÁRIO DISPONÍVEL: João Carlos"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <!-- Informações do Departamento -->
+
+                <!-- Telefone de Suporte -->
+                <TextView
+                    android:id="@+id/tvTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#F5F5F5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Telefone João Carlos: (45) 99999-9999"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#E0E0E0"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="DADOS SOLICITANTE:"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNomeSolicitante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#F5F5F5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nome do solicitante:"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvDepartamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#E0E0E0"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="DEPARTAMENTO"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <!-- Dados do Solicitante -->
+
+
+                <!-- Dados da Ocorrência -->
+
+                <TextView
+                    android:id="@+id/tvOcorrencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DADOS DA OCORRÊNCIA:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    android:background="#E0E0E0"
+                    android:gravity="center" />
+
+                <!-- Urgência -->
+                <TextView
+                    android:id="@+id/tvUrgencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Urgência não especificada"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:background="#F5F5F5"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btAvancarChamado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AVANÇAR"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+</ScrollView>

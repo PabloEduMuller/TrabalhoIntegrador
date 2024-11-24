@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!-- parte superior da tela -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- ImageView para o ícone esquerdo -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="Ícone de atendente"
+            app:srcCompat="@drawable/ic_atendente" />
+
+        <!-- título SUPORTE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="SUPORTE"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!--  ícone direito -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="Ícone de pessoas"
+            app:srcCompat="@drawable/ic_pessoas" />
+
+    </LinearLayout>
+    <!--fim da parte superior da tela -->
+    <!-- campo do nome solicitante -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="NOME DO SOLICITANTE"
+        android:textStyle="bold" />
+
+    <!-- fim campo do nome solicitante -->
+
+    <!-- campo da ocorrencia -->
+    <EditText
+        android:id="@+id/edNomeSolicitante"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="informe seu nome"
+        android:inputType="text"
+        android:textAlignment="center"
+        tools:ignore="RtlCompat" />
+    <!-- campo do departamento -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="DEPARTAMENTO"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edDepartamento"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="informe o departamento"
+        android:inputType="text"
+        android:textAlignment="center" />
+    <!-- fim campo do departamento -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="OCORRÊNCIA"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edOcorrencia"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="informe o que está ocorrendo"
+        android:inputType="text"
+        android:textAlignment="center"
+
+        tools:ignore="RtlCompat" />
+    <!-- fim campo da ocorrencia -->
+
+    <!-- campo do anexo-->
+
+    <!-- fim campo do anexo -->
+
+    <!-- campos de urgencia-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="GRAU DE URGENCIA"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgUrgencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbUrgenciaLeve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leve" />
+
+            <RadioButton
+                android:id="@+id/rbUrgenciaMedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Médio" />
+
+            <RadioButton
+                android:id="@+id/rbUrgenciaGrave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grave" />
+
+        </RadioGroup>
+
+
+        <!-- fim dos campos de urgencia-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btEnviarChamado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR CHAMADO"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

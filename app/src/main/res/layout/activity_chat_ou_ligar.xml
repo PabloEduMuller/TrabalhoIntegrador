@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <ImageButton
+            android:id="@+id/ibHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/ic_home"
+            android:contentDescription="Ícone de home" />
+
+
+        <Button
+            android:id="@+id/btSair"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_sair"
+            android:contentDescription="Ícone de configurações"/>
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="CHAT DO SUPORTE"
+        android:textSize="20dp"
+        android:id="@+id/btChatSuporte"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:drawableLeft="@drawable/ic_chat"
+        android:background="@drawable/button_background"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="LIGAR PARA SUPORTE"
+        android:textSize="20dp"
+        android:id="@+id/btLigarSuporte"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_telefone"
+        android:background="@drawable/button_background"/>
+
+
+</LinearLayout>
